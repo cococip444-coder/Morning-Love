@@ -1,0 +1,39 @@
+<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Selamat Pagi, Cintaku!</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(#8fd3ff,#dff7ff);overflow:hidden}
+.scene,.msg{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh}
+.hide{display:none}
+.sun{width:120px;height:120px;background:#ffd54d;border-radius:50%;position:relative;animation:spin 12s linear infinite}
+.sun:before,.sun:after{content:"";position:absolute;background:#333;border-radius:50%}
+.sun:before{width:10px;height:10px;left:35px;top:40px;box-shadow:40px 0 #333}
+.sun:after{width:40px;height:20px;border:3px solid #333;border-top:none;border-left:none;border-right:none;left:40px;top:65px;background:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.flowers{position:absolute;bottom:0;width:100%;height:120px;background:repeating-linear-gradient(90deg,#5cb85c 0 20px,#6ac36a 20px 40px)}
+.couple{font-size:90px;margin-top:20px}
+button{padding:14px 28px;border:none;border-radius:30px;background:#ff6fa5;color:#fff;font-size:18px;cursor:pointer}
+.card{background:#fff;padding:25px;border-radius:20px;max-width:500px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+</style></head>
+<body>
+<div class="scene" id="a">
+<div class="sun"></div>
+<h2>☀️ Selamat Pagi</h2>
+<p>Taman penuh bunga di pagi hari 🌸</p>
+<div class="couple">🚶‍♂️❤️🚶‍♀️</div>
+<button onclick="go()">Sentuh Aku 💗</button>
+<div class="flowers"></div>
+</div>
+<div class="msg hide" id="b">
+<div class="card">
+<div style="font-size:90px">🪑🍦💕</div>
+<h1>Selamat Pagi, Cintaku!</h1>
+<h2>Kamu Ganteng Hari Ini!</h2>
+<h2>Love Youu Suamiku yang Bandel 😽💗</h2>
+<h3>Sshhh... Fanni Lagi Mimpiin Mas! 🤍</h3>
+<p>Bayangkan kalian duduk di bangku taman menikmati es krim bersama di pagi yang indah.</p>
+</div>
+</div>
+<script>
+function go(){a.classList.add('hide');b.classList.remove('hide')}
+</script>
+</body></html>
